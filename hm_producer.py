@@ -77,9 +77,9 @@ def send_message(host: str, queue_name: str, message: str):
 # Define how the csv will be read by RabbitMQ
 # data_row tells us how the code will read the columns in our csv
 # Column 0 is our time stamp 
-# Column 1 & Channel 1 is our smoker temp
-# Columnn 2 & Channel 2 is food A
-# Column 3 & Channel 3 is food B
+# Column 1 is our smoker temp
+# Columnn 2 is food A
+# Column 3  is food B
 
 def process_csv():
     """Reads data from CSV file and sends it to RabbitMQ queues."""
@@ -88,10 +88,10 @@ def process_csv():
         next(reader)  # Skip header row
         
         for data_row in reader:
-            time_stamp_str = data_row['Time (UTC)']
-            smokerA_temp_str = data_row['Channel1']
-            jackfruit_temp_str = data_row['Channel2']
-            pineapple_temp_str = data_row['Channel3']
+            time_stamp_str = data_row[0]
+            smokerA_temp_str = data_row[1]
+            jackfruit_temp_str = data_row[2]
+            pineapple_temp_str = data_row[3]
 
              # Convert timestamp string to Unix timestamp (float)
             timestamp = datetime.strptime(time_stamp_str, "%m/%d/%y %H:%M:%S").timestamp()
@@ -107,9 +107,6 @@ def process_csv():
             if pineapple_temp_str:
                 message = struct.pack('!df', timestamp, float(pineapple_temp_str))
                 send_message("localhost", "pineapple", message)
-            
-            # Sleep for 5 seconds before reading the next row
-            time.sleep(5)
 
 if __name__ == "__main__":
     offer_rabbitmq_admin_site()
