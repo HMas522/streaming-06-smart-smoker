@@ -18,6 +18,7 @@ import pika
 import sys
 import os
 import time
+import math
 import webbrowser
 import traceback
 from collections import deque
@@ -44,7 +45,19 @@ smoker_drop_threshold = 15.0
 food_stall_threshold = 1.0
 
 # Define smoker callback
-def check_smoker_alert():
+def check_smoker_alert(ch, method, properties, body):
+    temp = ['0']
+    message = body.decode()
+
+    # decode the binary message body to a string
+    logger.info(f" [x] Received {message}")
+
+    #split the message by comma so only the temp is read
+    parts = message.split(',')
+    temp[0] = float(parts[1].strip())
+
+    smokerA_deque.append(temp)
+
     if len(smokerA_deque) == smokerA_deque.maxlen:
         initial_temp = smokerA_deque[0][1]
         latest_temp = smokerA_deque[-1][1]
@@ -54,22 +67,47 @@ def check_smoker_alert():
             logger.info(alert_message)
 
 # Define Food A callback 
-def jackfruit_stall(deque, food_name):
+def jackfruit_stall(ch, method, properties, body):
+
+    temp = ['0']
+    message = body.decode()
+
+    # decode the binary message body to a string
+    logger.info(f" [x] Received {message}")
+
+    #split the message by comma so only the temp is read
+    parts = message.split(',')
+    temp[0] = float(parts[1].strip())
+
+    jackfruit_deque.append(temp)
+
     if len(jackfruit_deque) == jackfruit_deque.maxlen:
         initial_temp = deque[0][1]
         latest_temp = deque[-1][1]
         if abs(initial_temp - latest_temp) <= food_stall_threshold:
-            alert_message = f" [!] Food Stall Alert! {food_name} temp changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
+            alert_message = f" [!] Food Stall Alert! jackfruit temp changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
             print(alert_message)
             logger.info(alert_message)
 
 # Define food B callback
-def pineapple_stall(deque, food_name):
+def pineapple_stall(ch, method, properties, body):
+    temp = ['0']
+    message = body.decode()
+
+    # decode the binary message body to a string
+    logger.info(f" [x] Received {message}")
+
+    #split the message by comma so only the temp is read
+    parts = message.split(',')
+    temp[0] = float(parts[1].strip())
+
+    pineapple_deque.append(temp)
+    
     if len(pineapple_deque) == pineapple_deque.maxlen:
         initial_temp = deque[0][1]
         latest_temp = deque[-1][1]
         if abs(initial_temp - latest_temp) <= food_stall_threshold:
-            alert_message = f"Food Stall Alert! {food_name} temperature changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
+            alert_message = f"Food Stall Alert! pineapple temperature changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
             print(alert_message)
             logger.info(alert_message)            
 
@@ -89,7 +127,6 @@ def consumer():
             message = eval(body.decode())
             timestamp, temp = message
             timestamp = datetime.strptime(timestamp, '%m/%d/%y %H:%M:%S')
-
 
             if method.routing_key == "smokerA":
                 smokerA_deque.append((timestamp, temp))
