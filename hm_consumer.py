@@ -28,11 +28,11 @@ pineapple_deque = deque(maxlen=20)
 
 
 # define a main function to run the program
-def main():
+def main(host: str):
     """ Continuously listen for task messages on a named queue."""
     queues = ('smokerA-queue', 'jackfruit-queue', 'pineapple-queue')
     try:
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost")
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host)
         )
     except Exception as e:
         print()
@@ -141,11 +141,7 @@ Pineapple temperature has decreased by {pineapple_change}{degree_sign} in 10 min
 # If this is the script we are running, then call some functions and execute code!
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("Interrupted")
-        try:
-            sys.exit(0)
-        except SystemExit:
-            os._exit(0)
+  # call the main function with the information needed
+
+    host = 'localhost'
+    main(host)
