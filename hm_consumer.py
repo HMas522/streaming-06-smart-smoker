@@ -46,24 +46,24 @@ def check_smoker_alert():
             logger.info(alert_message)
 
 # Define Food A callback 
-def jackfruit_stall():
+def jackfruit_stall(deque, food_name):
 
     if len(jackfruit_deque) == jackfruit_deque.maxlen:
         initial_temp = deque[0][1]
         latest_temp = deque[-1][1]
         if abs(initial_temp - latest_temp) <= food_stall_threshold:
-            alert_message = f" [!] Food Stall Alert! jackfruit temp changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
+            alert_message = f" [!] Food Stall Alert! {food_name} temp changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
             print(alert_message)
             logger.info(alert_message)
 
 # Define food B callback
-def pineapple_stall():
+def pineapple_stall(deque, food_name):
     
     if len(pineapple_deque) == pineapple_deque.maxlen:
         initial_temp = deque[0][1]
         latest_temp = deque[-1][1]
         if abs(initial_temp - latest_temp) <= food_stall_threshold:
-            alert_message = f"Food Stall Alert! pineapple temperature changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
+            alert_message = f"Food Stall Alert! {food_name} temperature changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
             print(alert_message)
             logger.info(alert_message)            
 
