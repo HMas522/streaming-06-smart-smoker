@@ -55,7 +55,6 @@ def send_temps(host: str, queue_name: str):
 
         with open('smoker-temps.csv', 'r') as file:
             reader = csv.reader(file, delimiter=",")
-            header = next(reader) 
             for row in reader:
                 Time,Channel1,Channel2,Channel3 = row
                 

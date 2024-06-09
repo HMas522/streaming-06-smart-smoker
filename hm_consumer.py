@@ -35,19 +35,8 @@ smoker_drop_threshold = 15.0
 food_stall_threshold = 1.0
 
 # Define smoker callback
-def check_smoker_alert(ch, method, properties, body):
-    temp = ['0']
-    message = body.decode()
-
-    # decode the binary message body to a string
-    logger.info(f" [x] Received {message}")
-
-    #split the message by comma so only the temp is read
-    parts = message.split(',')
-    temp[0] = float(parts[1].strip())
-
-    smokerA_deque.append(temp)
-
+def check_smoker_alert():
+    
     if len(smokerA_deque) == smokerA_deque.maxlen:
         initial_temp = smokerA_deque[0][1]
         latest_temp = smokerA_deque[-1][1]
@@ -57,19 +46,7 @@ def check_smoker_alert(ch, method, properties, body):
             logger.info(alert_message)
 
 # Define Food A callback 
-def jackfruit_stall(ch, method, properties, body):
-
-    temp = ['0']
-    message = body.decode()
-
-    # decode the binary message body to a string
-    logger.info(f" [x] Received {message}")
-
-    #split the message by comma so only the temp is read
-    parts = message.split(',')
-    temp[0] = float(parts[1].strip())
-
-    jackfruit_deque.append(temp)
+def jackfruit_stall(deque):
 
     if len(jackfruit_deque) == jackfruit_deque.maxlen:
         initial_temp = deque[0][1]
@@ -80,18 +57,7 @@ def jackfruit_stall(ch, method, properties, body):
             logger.info(alert_message)
 
 # Define food B callback
-def pineapple_stall(ch, method, properties, body):
-    temp = ['0']
-    message = body.decode()
-
-    # decode the binary message body to a string
-    logger.info(f" [x] Received {message}")
-
-    #split the message by comma so only the temp is read
-    parts = message.split(',')
-    temp[0] = float(parts[1].strip())
-
-    pineapple_deque.append(temp)
+def pineapple_stall(deque):
     
     if len(pineapple_deque) == pineapple_deque.maxlen:
         initial_temp = deque[0][1]
