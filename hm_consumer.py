@@ -16,6 +16,7 @@ Remember:
 # Basic imports to run code
 import pika
 import sys
+import os
 import time
 from collections import deque
 import re
@@ -25,13 +26,51 @@ smokerA_deque = deque(maxlen=5)
 jackfruit_deque = deque(maxlen=20)
 pineapple_deque = deque(maxlen=20)
 
+
+# define a main function to run the program
+def main(host: str):
+    """ Continuously listen for task messages on a named queue."""
+    queues = ('smokerA-queue', 'jackfruit-queue', 'pineapple-queue')
+    try:
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
+    except Exception as e:
+        print()
+        print("ERROR: connection to RabbitMQ server failed.")
+        print(f"Verify the server is running on host={host}.")
+        print(f"The error says: {e}")
+        print()
+        sys.exit(1)
+    try:
+        channel = connection.channel()
+        for queue in queues:
+            channel.queue_delete(queue=queue)
+            channel.queue_declare(queue, durable=True)
+        channel.basic_qos(prefetch_count=1)
+        channel.basic_consume("smokerA-queue", on_message_callback=smokerA_callback, auto_ack=True)
+        channel.basic_consume("jackfruit-queue", on_message_callback=jackfruit_callback, auto_ack=True)
+        channel.basic_consume("pineapple-queue", on_message_callback=pineapple_callback, auto_ack=True)
+        print(" [*] Waiting for messages. To exit press CTRL+C")
+        channel.start_consuming()
+    except Exception as e:
+        print()
+        print("ERROR: something went wrong.")
+        print(f"The error says: {e}")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print()
+        print(" User interrupted continuous listening process.")
+        sys.exit(0)
+    finally:
+        print("\nClosing connection. Goodbye.\n")
+        connection.close()
+
 # Help with readability by adding degree sign
 degree_sign = u'\N{DEGREE SIGN}'
 
 # Define a callback function to be called when a message is received
 # time sleep using "."
 # Basic ack to delete from the queue once acknowledged
-def smoker_callback(ch, method, properties, body):
+def smokerA_callback(ch, method, properties, body):
     """ Define behavior on getting a message."""
     print(f" [x] Received {body.decode()}")
     time.sleep(body.count(b"."))
@@ -97,45 +136,16 @@ Pineapple temperature has decreased by {pineapple_change}{degree_sign} in 10 min
 
             ''')
 
-# define a main function to run the program
-def main(host: str):
-    """ Continuously listen for task messages on a named queue."""
-    queues = ('smokerA-queue', 'jackfruit-queue', 'pineapple-queue')
-    try:
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
-    except Exception as e:
-        print()
-        print("ERROR: connection to RabbitMQ server failed.")
-        print(f"Verify the server is running on host={host}.")
-        print(f"The error says: {e}")
-        print()
-        sys.exit(1)
-    try:
-        channel = connection.channel()
-        for queue in queues:
-            channel.queue_delete(queue=queue)
-            channel.queue_declare(queue, durable=True)
-        channel.basic_qos(prefetch_count=1)
-        channel.basic_consume("smokerA-queue", on_message_callback=smoker_callback, auto_ack=False)
-        channel.basic_consume("jackfruit-queue", on_message_callback=jackfruit_callback, auto_ack=False)
-        channel.basic_consume("pineapple-queue", on_message_callback=pineapple_callback, auto_ack=False)
-        print(" Listening Worker Status: Ready for work. To exit press CTRL+C")
-        channel.start_consuming()
-    except Exception as e:
-        print()
-        print("ERROR: something went wrong.")
-        print(f"The error says: {e}")
-        sys.exit(1)
-    except KeyboardInterrupt:
-        print()
-        print(" User interrupted continuous listening process.")
-        sys.exit(0)
-    finally:
-        print("\nClosing connection. Goodbye.\n")
-        connection.close()
-
 if __name__ == "__main__":
     # call the main function with the information needed
+try:
+        main()
+    except KeyboardInterrupt:
+        print("Interrupted")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
 
-    host = 'localhost'
+host = 'localhost'
     main(host)

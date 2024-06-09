@@ -40,7 +40,7 @@ def connect_rabbitmq():
         # Define queues
         # Define delete queue in channel
         # Define declare in channel
-        queues = ["smoker", "jackfruit", "pineapple"]
+        queues = ["smokerA", "jackfruit", "pineapple"]
         for queue_name in queues:
             ch.queue_delete(queue=queue_name)
             ch.queue_declare(queue=queue_name, durable=True)
