@@ -16,6 +16,8 @@ import sys
 import webbrowser
 import pathlib
 import time
+import struct
+from datetime import datetime
 from util_logger import setup_logger
 
 # Call setup_logger to initialize logging
@@ -80,39 +82,34 @@ def send_message(host: str, queue_name: str, message: str):
 # Column 3 & Channel 3 is food B
 
 def process_csv():
-    """Process the CSV file and send messages to RabbitMQ queues"""
-    try:
-        csv_file_path = "C:\\Users\\Hayley\\Documents\\streaming-05-smart-smoker\\smoker-temps.csv"
-        with open(csv_file_path, newline='', encoding='utf-8-sig') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for data_row in reader:
-                time_stamp = data_row['Time (UTC)']
-                smokerA_temp_str = data_row['Channel1']
-                jackfruit_temp_str = data_row['Channel2']
-                pineapple_temp_str = data_row['Channel3']
+    """Reads data from CSV file and sends it to RabbitMQ queues."""
+    with open("smoker-temps.csv", newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader)  # Skip header row
+        
+        for data_row in reader:
+            time_stamp_str = data_row['Time (UTC)']
+            smokerA_temp_str = data_row['Channel1']
+            jackfruit_temp_str = data_row['Channel2']
+            pineapple_temp_str = data_row['Channel3']
 
-                # Define our message based on type of temp and label our message
-                if smokerA_temp_str:
-                    smokerA_temp = float(smokerA_temp_str)
-                    send_message("smokerA", (time_stamp, smokerA_temp))
-                if jackfruit_temp_str:
-                    jackfruit_temp = float(jackfruit_temp_str)
-                    send_message("jackfruit", (time_stamp, jackfruit_temp))
-                if pineapple_temp_str:
-                    pineapple_temp = float(pineapple_temp_str)
-                    send_message("pineapple", (time_stamp, pineapple_temp))
-                time.sleep(5)
+             # Convert timestamp string to Unix timestamp (float)
+            timestamp = datetime.strptime(time_stamp_str, "%m/%d/%y %H:%M:%S").timestamp()
 
-    # Error handling
-    except FileNotFoundError:
-        logger.error("CSV file not found.")
-        sys.exit(1)
-    except ValueError as e:
-        logger.error(f"Error processing CSV: {e}")
-        sys.exit(1)
-    except Exception as e:
-        logger.error(f"An unexpected error occurred: {e}")
-        sys.exit(1)
+            if smokerA_temp_str:
+                message = struct.pack('!df', timestamp, float(smokerA_temp_str))
+                send_message("localhost", "smokerA", message)
+            
+            if jackfruit_temp_str:
+                message = struct.pack('!df', timestamp, float(jackfruit_temp_str))
+                send_message("localhost", "jackfruit", message)
+            
+            if pineapple_temp_str:
+                message = struct.pack('!df', timestamp, float(pineapple_temp_str))
+                send_message("localhost", "pineapple", message)
+            
+            # Sleep for 5 seconds before reading the next row
+            time.sleep(5)
 
 if __name__ == "__main__":
     offer_rabbitmq_admin_site()
