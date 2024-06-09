@@ -1,8 +1,7 @@
-2024-06-09 14:55:36,965.hm_producer.INFO ==================================================
-2024-06-09 14:55:36,965.hm_producer.INFO Today is 2024-06-09 at 02:55 PM
-2024-06-09 14:55:36,965.hm_producer.INFO Running on: nt Windows 10
-2024-06-09 14:55:36,965.hm_producer.INFO Python version:  3.10.11
-2024-06-09 14:55:36,966.hm_producer.INFO Python path: C:\Users\Hayley\Documents\streaming-06-smart-smoker\.venv
-2024-06-09 14:55:36,966.hm_producer.INFO Working dir: C:\Users\Hayley\Documents\streaming-06-smart-smoker
-2024-06-09 14:55:36,966.hm_producer.INFO ==================================================
-2024-06-09 14:55:39,540.hm_producer.ERROR An unexpected error occurred: send_message() missing 1 required positional argument: 'message'
+2024-06-09 15:11:42,945.hm_producer.INFO ==================================================
+2024-06-09 15:11:42,945.hm_producer.INFO Today is 2024-06-09 at 03:11 PM
+2024-06-09 15:11:42,945.hm_producer.INFO Running on: nt Windows 10
+2024-06-09 15:11:42,946.hm_producer.INFO Python version:  3.10.11
+2024-06-09 15:11:42,946.hm_producer.INFO Python path: C:\Users\Hayley\Documents\streaming-06-smart-smoker\.venv
+2024-06-09 15:11:42,946.hm_producer.INFO Working dir: C:\Users\Hayley\Documents\streaming-06-smart-smoker
+2024-06-09 15:11:42,946.hm_producer.INFO ==================================================
