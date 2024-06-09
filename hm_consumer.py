@@ -16,113 +16,118 @@ Remember:
 # Basic imports to run code
 import pika
 import sys
+import os
 import time
-import struct
-from datetime import datetime
+import webbrowser
+import traceback
 from collections import deque
+from datetime import datetime
+
+from util_logger import setup_logger
+
+logger, logname = setup_logger(__file__)
+
+def offer_rabbitmq_admin_site():
+   """Offer to open the RabbitMQ Admin website."""
+   ans = input("Would you like to monitor RabbitMQ queues? y or n ")
+   print()
+   if ans.lower() == "y":
+       webbrowser.open_new("http://localhost:15672/#/queues")
+       logger.info("Opened RabbitMQ")
 
 # Define the deques and window
 smokerA_deque = deque(maxlen=5)
 jackfruit_deque = deque(maxlen=20)
 pineapple_deque = deque(maxlen=20)
 
-# Define smokerA call back
-# Use deque/window to append temperature to the limit set
-def smokerA_callback(ch, method, properties, body):
-    timestamp, temperature = struct.unpack('!df', body)
-    timestamp_str = datetime.fromtimestamp(timestamp).strftime("%m/%d/%y %H:%M:%S")
-    print(f" [x] Received from smoker queue: {timestamp_str} - Temperature: {temperature}F")
+smoker_drop_threshold = 15.0
+food_stall_threshold = 1.0
 
-    smokerA_deque.append(temperature)
-
+# Define smoker callback
+def check_smoker_alert():
     if len(smokerA_deque) == smokerA_deque.maxlen:
-        if smokerA_deque[0] - temperature >= 15:
-            print(" [!] Smoker temp decreases by 15 F or more in 2.5 min (or 5 readings)  --> smoker alert!")
+        initial_temp = smokerA_deque[0][1]
+        latest_temp = smokerA_deque[-1][1]
+        if initial_temp - latest_temp >= smoker_drop_threshold:
+            alert_message = f" [!] Smoker Alert! Temp dropped by {initial_temp - latest_temp}F in 2.5 minutes."
+            print(alert_message)
+            logger.info(alert_message)
 
-    print(" [x] Done.")
-    ch.basic_ack(delivery_tag=method.delivery_tag)
-
-# Define first food callback
-def jackfruit_callback(ch, method, properties, body):
-    timestamp, temperature = struct.unpack('!df', body)
-    timestamp_str = datetime.fromtimestamp(timestamp).strftime("%m/%d/%y %H:%M:%S")
-    print(f" [*] Received from food A queue: {timestamp_str} - Temperature: {temperature}F")
-
-    jackfruit_deque.append(temperature)
-
+# Define Food A callback 
+def jackfruit_stall(deque, food_name):
     if len(jackfruit_deque) == jackfruit_deque.maxlen:
-        if max(jackfruit_deque) - min(jackfruit_deque) <= 1:
-            print(" [!] Food temp change in temp is 1 F or less in 10 min (or 20 readings)  --> food stall alert!")
+        initial_temp = deque[0][1]
+        latest_temp = deque[-1][1]
+        if abs(initial_temp - latest_temp) <= food_stall_threshold:
+            alert_message = f" [!] Food Stall Alert! {food_name} temp changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
+            print(alert_message)
+            logger.info(alert_message)
 
-    print(" [x] Done.")
-    ch.basic_ack(delivery_tag=method.delivery_tag)
-
-# Define second food callback
-def pineapple_callback(ch, method, properties, body):
-    timestamp, temperature = struct.unpack('!df', body)
-    timestamp_str = datetime.fromtimestamp(timestamp).strftime("%m/%d/%y %H:%M:%S")
-    print(f" [*] Received from food B queue: {timestamp_str} - Temperature: {temperature}F")
-
-    pineapple_deque.append(temperature)
-
+# Define food B callback
+def pineapple_stall(deque, food_name):
     if len(pineapple_deque) == pineapple_deque.maxlen:
-        if max(pineapple_deque) - min(pineapple_deque) <= 1:
-            print(" [!] Food temp change in temp is 1 F or less in 10 min (or 20 readings)  --> food stall alert!")
+        initial_temp = deque[0][1]
+        latest_temp = deque[-1][1]
+        if abs(initial_temp - latest_temp) <= food_stall_threshold:
+            alert_message = f"Food Stall Alert! {food_name} temperature changed by {abs(initial_temp - latest_temp)}F in 10 minutes."
+            print(alert_message)
+            logger.info(alert_message)            
 
-    print(" [x] Done.")
-    ch.basic_ack(delivery_tag=method.delivery_tag)
-
-def main():
-    """Continuously listen for task messages on named queues."""
-    hn = "localhost"
-
+def consumer():
+    """ Continuously listen for task messages on named queues."""
+    connection = None
     try:
-        # Create a blocking connection to the RabbitMQ server
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host=hn))
-    except Exception as e:
-        print()
-        print("ERROR: connection to RabbitMQ server failed.")
-        print(f"Verify the server is running on host={hn}.")
-        print(f"The error says: {e}")
-        print()
-        sys.exit(1)
-
-    try:
-        # Use the connection to create a communication channel
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost"))
         channel = connection.channel()
 
-        # Declare each queue
         queues = ["smokerA", "jackfruit", "pineapple"]
-        for queue in queues:
-            channel.queue_delete(queue=queue)
-            channel.queue_declare(queue=queue, durable=True)
+        for queue_name in queues:
+            channel.queue_declare(queue=queue_name, durable=True)
 
-        # Set the prefetch count to limit the number of messages being processed concurrently
+        def callback(ch, method, properties, body):
+            """Define behavior on getting a message."""
+            message = eval(body.decode())
+            timestamp, temp = message
+            timestamp = datetime.strptime(timestamp, '%m/%d/%y %H:%M:%S')
+
+
+            if method.routing_key == "smokerA":
+                smokerA_deque.append((timestamp, temp))
+                check_smoker_alert()
+            elif method.routing_key == "jackfruit":
+                jackfruit_deque.append((timestamp, temp))
+                jackfruit_stall(jackfruit_deque, "jackfruit")
+            elif method.routing_key == "pineapple":
+                pineapple_deque.append((timestamp, temp))
+                pineapple_stall(pineapple_deque, "pineapple")
+
+            ch.basic_ack(delivery_tag=method.delivery_tag)
+
         channel.basic_qos(prefetch_count=1)
+        for queue_name in queues:
+            channel.basic_consume(queue=queue_name, on_message_callback=callback)
 
-        # Configure the channel to listen on each queue with corresponding callback function
-        channel.basic_consume(queue="smokerA", on_message_callback=smokerA_callback, auto_ack=False)
-        channel.basic_consume(queue="jackfruit", on_message_callback=jackfruit_callback, auto_ack=False)
-        channel.basic_consume(queue="pineapple", on_message_callback=pineapple_callback, auto_ack=False)
-
-        # Print a message to the console for the user
         print(" [*] Waiting for messages. To exit press CTRL+C")
-
-        # Start consuming messages via the communication channel
         channel.start_consuming()
-
+    
+    except pika.exceptions.AMQPConnectionError as e:
+        logger.error(f"Connection error: {e}")
+    except pika.exceptions.AMQPChannelError as e:
+        logger.error(f"Channel error: {e}")
     except Exception as e:
-        print()
-        print("ERROR: something went wrong.")
-        print(f"The error says: {e}")
-        sys.exit(1)
-    except KeyboardInterrupt:
-        print()
-        print(" User interrupted continuous listening process.")
-        sys.exit(0)
+        logger.error(f"An unexpected error occurred: {e}")
+        traceback.print_exc()
     finally:
-        print("\nClosing connection. Goodbye.\n")
-        connection.close()
+        if connection and not connection.is_closed:
+            connection.close()
 
 if __name__ == "__main__":
-    main()
+    try:
+        offer_rabbitmq_admin_site()
+        consumer()
+    except KeyboardInterrupt:
+        print("Interrupted")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
