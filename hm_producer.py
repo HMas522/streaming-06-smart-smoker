@@ -67,42 +67,31 @@ def send_message(host: str, queue_name: str, message: bytes):
 
 def process_csv():
     """Process the CSV file and send messages to RabbitMQ queues"""
-    try:
-        csv_file_path = "C:\\Users\\Hayley\\Documents\\streaming-05-smart-smoker\\smoker-temps.csv"
-        with open(csv_file_path, newline='', encoding='utf-8-sig') as csvfile:
-            reader = csv.DictReader(csvfile)  
-            
-            for data_row in reader:
+    with open("smoker-temps.csv", newline='') as csvfile:
+        reader = csv.reader(csvfile)  
+        next(reader)
+        for data_row in reader:
                 time_stamp_str = data_row[0]
                 smokerA_temp_str = data_row[1]
                 jackfruit_temp_str = data_row[2]
                 pineapple_temp_str = data_row[3]
 
              # Convert timestamp string to Unix timestamp (float)
-            timestamp = datetime.strptime(time_stamp_str, "%m/%d/%y %H:%M:%S").timestamp()
+        timestamp = datetime.strptime(time_stamp_str, "%m/%d/%y %H:%M:%S").timestamp()
 
-            if smokerA_temp_str:
+        if smokerA_temp_str:
                 message = struct.pack('!df', timestamp, float(smokerA_temp_str))
                 send_message("localhost", "smokerA", message)
             
-            if jackfruit_temp_str:
+        if jackfruit_temp_str:
                 message = struct.pack('!df', timestamp, float(jackfruit_temp_str))
                 send_message("localhost", "jackfruit", message)
             
-            if pineapple_temp_str:
+        if pineapple_temp_str:
                 message = struct.pack('!df', timestamp, float(pineapple_temp_str))
                 send_message("localhost", "pineapple", message)
 
-    # Error handling
-    except FileNotFoundError:
-        logger.error("CSV file not found.")
-        sys.exit(1)
-    except ValueError as e:
-        logger.error(f"Error processing CSV: {e}")
-        sys.exit(1)
-    except Exception as e:
-        logger.error(f"An unexpected error occurred: {e}")
-        sys.exit(1)
+        time.sleep(5)
 
 if __name__ == "__main__":
     offer_rabbitmq_admin_site()
