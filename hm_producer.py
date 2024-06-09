@@ -80,9 +80,7 @@ def process_csv():
                 if pineapple_temp_str:
                     pineapple_temp = float(pineapple_temp_str)
                     send_message("pineapple", (time_stamp, pineapple_temp))
-
-                 # Sleep for 30 seconds before reading the next row
-                time.sleep(30)    
+   
 
     # Error handling
     except FileNotFoundError:
