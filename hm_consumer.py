@@ -1,18 +1,8 @@
-"""
-Student: Hayley M
-Date: 08Jun24
+# Student: Hayley M
+# Date: 08Jun24
 
-Message listener 
+# Message listener 
 
-Description:
-This script continuously listens for messages on a named queue.
-This terminal must be open and dedicated to this process. 
-(If you want to emit messages, open a different terminal window.)
-
-Remember:
-- Use Control + C to close a terminal and end the listening process.
-- Use the up arrow to recall the last command executed in the terminal.
-"""
 # Basic imports to run code
 import pika
 import sys
