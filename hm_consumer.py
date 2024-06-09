@@ -32,7 +32,8 @@ def main(host: str):
     """ Continuously listen for task messages on a named queue."""
     queues = ('smokerA-queue', 'jackfruit-queue', 'pineapple-queue')
     try:
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost")
+        )
     except Exception as e:
         print()
         print("ERROR: connection to RabbitMQ server failed.")
