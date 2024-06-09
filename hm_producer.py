@@ -64,8 +64,7 @@ def process_csv():
     try:
         csv_file_path = "C:\\Users\\Hayley\\Documents\\streaming-05-smart-smoker\\smoker-temps.csv"
         with open(csv_file_path, newline='', encoding='utf-8-sig') as csvfile:
-            reader = csv.DictReader(csvfile)
-            next(reader)  
+            reader = csv.DictReader(csvfile)  
             
             for data_row in reader:
                 time_stamp_str = data_row[0]
