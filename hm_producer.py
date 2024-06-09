@@ -30,27 +30,33 @@ def offer_rabbitmq_admin_site():
         webbrowser.open_new("http://localhost:15672/#/queues")
         print()
 
-def connect_rabbitmq():
-    """Connect to RabbitMQ server and return the connection and channel"""
+def send_message(host: str, queue_name: str, message: bytes):
+    """
+    Creates and sends a binary message to the specified queue.
+
+    Parameters:
+        host (str): the host name or IP address of the RabbitMQ server
+        queue_name (str): the name of the queue
+        message (bytes): the binary message to be sent to the queue
+    """
+
     try:
-        # Create a blocking connection to the RabbitMQ server
-        conn = pika.BlockingConnection(pika.ConnectionParameters("localhost"))
-        # Use the connection to create a communication channel
+        # create a blocking connection to the RabbitMQ server
+        conn = pika.BlockingConnection(pika.ConnectionParameters(host))
+        # use the connection to create a communication channel
         ch = conn.channel()
-
-        # Define queues
-        # Define delete queue in channel
-        # Define declare in channel
-        queues = ["smokerA", "jackfruit", "pineapple"]
-        for queue_name in queues:
-            ch.queue_delete(queue=queue_name)
-            ch.queue_declare(queue=queue_name, durable=True)
-
-        return conn, ch
+        # use the channel to declare a durable queue
+        ch.queue_declare(queue=queue_name, durable=True)
+        # use the channel to publish a message to the queue
+        ch.basic_publish(exchange="", routing_key=queue_name, body=message)
+        # print a message to the console for the user
+        print(f" [x] Sent message to {queue_name}")
     except pika.exceptions.AMQPConnectionError as e:
-        logger.error(f"Error: Connection to RabbitMQ server failed: {e}")
+        print(f"Error: Connection to RabbitMQ server failed: {e}")
         sys.exit(1)
-
+    finally:
+        # close the connection to the server
+        conn.close()
 
 # Define how the csv will be read by RabbitMQ
 # data_row tells us how the code will read the columns in our csv
@@ -97,24 +103,6 @@ def process_csv():
     except Exception as e:
         logger.error(f"An unexpected error occurred: {e}")
         sys.exit(1)
-
-def send_message(queue_name: str, message: tuple):
-    """
-    Publish a message to the specified queue.
-
-    Parameters:
-        queue_name (str): The name of the queue
-        message (tuple): The message to be sent to the queue
-    """
-    try:
-        conn, ch = connect_rabbitmq()
-        ch.basic_publish(exchange="", routing_key=queue_name, body=str(message))
-        logger.info(f"Sent message to {queue_name}: {message}")
-    except Exception as e:
-        logger.error(f"Error sending message to {queue_name}: {e}")
-    finally:
-        # Close the connection to the server
-        conn.close()
 
 if __name__ == "__main__":
     offer_rabbitmq_admin_site()
