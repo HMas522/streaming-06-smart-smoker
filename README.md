@@ -1,7 +1,7 @@
-# streaming-05-smart-smoker
+# streaming-06-smart-smoker
 
 # Student: Hayley M
-# Date: 27May24
+# Date: 08Jun24
 
 > Use RabbitMQ to distribute tasks to multiple workers
 
