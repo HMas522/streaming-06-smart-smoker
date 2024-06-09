@@ -28,7 +28,7 @@ pineapple_deque = deque(maxlen=20)
 
 
 # define a main function to run the program
-def main(host: str):
+def main():
     """ Continuously listen for task messages on a named queue."""
     queues = ('smokerA-queue', 'jackfruit-queue', 'pineapple-queue')
     try:
