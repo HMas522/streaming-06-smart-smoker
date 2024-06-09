@@ -46,7 +46,7 @@ def check_smoker_alert():
             logger.info(alert_message)
 
 # Define Food A callback 
-def jackfruit_stall(deque):
+def jackfruit_stall():
 
     if len(jackfruit_deque) == jackfruit_deque.maxlen:
         initial_temp = deque[0][1]
@@ -57,7 +57,7 @@ def jackfruit_stall(deque):
             logger.info(alert_message)
 
 # Define food B callback
-def pineapple_stall(deque):
+def pineapple_stall():
     
     if len(pineapple_deque) == pineapple_deque.maxlen:
         initial_temp = deque[0][1]
