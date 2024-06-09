@@ -5,3 +5,803 @@
 2024-06-09 17:30:11,544.hm_consumer.INFO Python path: C:\Users\Hayley\Documents\streaming-06-smart-smoker\.venv
 2024-06-09 17:30:11,544.hm_consumer.INFO Working dir: C:\Users\Hayley\Documents\streaming-06-smart-smoker
 2024-06-09 17:30:11,544.hm_consumer.INFO ==================================================
+2024-06-09 17:30:13,223.hm_consumer.INFO Opened RabbitMQ
+2024-06-09 17:30:13,257.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,258.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6000000000000014F in 10 minutes.
+2024-06-09 17:30:13,263.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 16.599999999999994F in 2.5 minutes.
+2024-06-09 17:30:13,264.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 16.599999999999994F in 2.5 minutes.
+2024-06-09 17:30:13,417.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 32.60000000000002F in 2.5 minutes.
+2024-06-09 17:30:13,419.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 32.60000000000002F in 2.5 minutes.
+2024-06-09 17:30:13,420.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 32.0F in 2.5 minutes.
+2024-06-09 17:30:13,421.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 32.0F in 2.5 minutes.
+2024-06-09 17:30:13,558.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,559.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,561.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,563.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8999999999999773F in 10 minutes.
+2024-06-09 17:30:13,565.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,566.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,567.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,568.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,569.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,571.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,572.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,572.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,573.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,573.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,574.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,575.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8999999999999773F in 10 minutes.
+2024-06-09 17:30:13,577.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,577.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,578.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,579.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,580.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,580.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:13,581.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,582.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,582.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.8999999999999773F in 10 minutes.
+2024-06-09 17:30:13,583.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.700000000000017F in 10 minutes.
+2024-06-09 17:30:13,585.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,586.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:13,586.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,587.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:13,587.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:13,588.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:13,589.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,590.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,591.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,592.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:13,592.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:13,593.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,594.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,594.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:13,595.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:13,596.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,597.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:13,598.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,599.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:13,599.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,600.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:13,601.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.700000000000017F in 10 minutes.
+2024-06-09 17:30:13,601.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,602.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6000000000000227F in 10 minutes.
+2024-06-09 17:30:13,603.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:13,603.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.700000000000017F in 10 minutes.
+2024-06-09 17:30:13,604.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,605.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,606.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,607.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,607.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,608.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,609.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.700000000000017F in 10 minutes.
+2024-06-09 17:30:13,609.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:13,610.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.6000000000000227F in 10 minutes.
+2024-06-09 17:30:13,611.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,613.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.6000000000000227F in 10 minutes.
+2024-06-09 17:30:13,614.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,614.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,615.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,616.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,616.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,617.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,618.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,619.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,619.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,620.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,620.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,621.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,621.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5999999999999943F in 10 minutes.
+2024-06-09 17:30:13,622.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,623.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,623.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,624.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,625.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,625.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,627.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,628.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.6000000000000227F in 10 minutes.
+2024-06-09 17:30:13,629.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,629.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,630.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,630.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,640.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,641.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,642.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,643.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,644.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,645.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,646.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,647.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,648.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,655.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,656.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,657.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,658.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,658.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,660.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,661.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,663.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,663.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,664.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,665.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,666.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,667.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,668.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,668.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,669.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,670.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,671.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,672.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,673.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,673.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,674.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,675.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,676.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,677.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,678.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,679.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,679.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,680.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,681.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,682.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,683.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,683.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,684.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,684.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,685.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,686.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,687.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,687.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,688.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,689.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,689.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,690.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,691.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,692.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,692.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,693.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,693.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,694.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,700.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,701.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,702.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,702.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,703.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,704.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,705.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,706.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,708.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,709.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,710.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,711.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,712.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,713.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,714.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,715.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,716.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,718.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,719.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,720.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,722.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,723.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,724.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,725.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,726.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,727.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,728.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,729.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,730.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,731.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,732.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,733.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,734.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,734.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,735.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,736.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,737.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,738.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,738.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,739.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,740.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,741.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,742.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,743.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,744.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,745.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,746.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,746.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,747.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,748.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,749.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,750.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,751.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,752.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,754.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,755.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,755.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,756.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,758.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,759.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,760.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,760.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,761.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,761.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,762.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,763.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,764.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,765.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,765.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,766.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,767.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:13,768.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,769.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,770.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,771.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,772.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,773.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,773.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,774.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,775.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,776.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,776.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,777.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,778.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,779.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,779.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,780.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,781.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,781.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,782.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,783.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,784.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,790.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,790.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,791.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,792.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,793.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,794.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,795.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,796.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,797.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,798.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,799.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,799.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,811.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,812.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,813.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,814.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,815.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,816.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,816.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,817.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,818.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,819.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,820.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,822.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,823.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,824.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,825.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,826.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,827.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,828.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,829.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,830.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,831.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,831.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,832.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,833.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,834.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,836.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,836.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,837.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,838.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,839.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,840.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,841.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,842.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,843.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,844.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,844.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,845.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,845.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,846.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,847.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,848.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,849.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,850.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,851.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,851.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,852.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,853.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,854.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,854.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,855.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,856.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,857.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,858.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,859.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,859.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,860.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,860.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,861.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,862.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,863.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,864.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,865.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,865.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,866.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,867.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,867.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,868.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,869.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,870.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,871.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,871.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,872.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,873.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,874.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,875.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,875.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,876.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,877.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,878.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,879.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,880.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,880.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,881.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,882.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,883.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,884.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,885.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,885.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,886.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,887.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,887.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,888.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,889.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,890.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,891.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,892.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,893.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,894.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:13,895.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,896.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,897.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,898.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,899.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,900.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,902.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,903.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,904.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,905.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,906.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,907.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,908.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,908.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,909.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,910.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,912.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,913.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,914.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,915.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,915.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,916.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,916.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,917.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,918.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,919.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,920.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,920.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,921.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,922.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,923.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,923.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,924.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,925.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,926.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,927.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,927.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,928.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,929.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,929.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,930.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,931.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,932.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,933.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,934.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,934.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,935.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,936.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:13,936.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,937.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,938.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,939.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,940.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,940.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:13,941.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,942.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,942.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,943.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,943.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,944.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,945.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,946.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,947.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,947.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,948.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,949.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,950.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,950.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,951.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,951.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,953.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,954.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:13,955.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,957.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,957.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,958.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,959.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,960.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,962.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,963.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,963.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,964.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,965.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,966.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,967.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,968.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,969.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,969.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,970.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,970.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,971.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,972.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,973.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,974.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,976.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,976.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,977.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,978.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,979.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,979.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,980.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,981.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,982.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:13,983.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,983.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,984.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,985.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,986.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,987.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,987.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,988.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,989.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,989.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,990.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,991.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:13,991.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,992.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,993.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,993.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,994.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:13,996.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,996.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,997.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,998.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:13,998.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.0F in 10 minutes.
+2024-06-09 17:30:13,999.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,000.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,000.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,001.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,002.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,003.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,004.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,004.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,005.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,006.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,007.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,007.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,008.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,009.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,010.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,010.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,011.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,011.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,012.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,013.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,013.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,014.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,015.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,016.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,017.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,017.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,018.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,018.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,019.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,020.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,020.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,021.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,022.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,022.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,023.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,024.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,024.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,025.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,025.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,026.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,027.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,027.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,028.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,029.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,030.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,030.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,031.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,032.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,032.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,033.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,033.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,034.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,035.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,036.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,037.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,038.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,038.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,039.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,040.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,040.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,041.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,042.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,042.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,044.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,044.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,045.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,046.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,046.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,047.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,048.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,048.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,049.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,050.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,051.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,051.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,052.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,053.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,053.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,054.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,054.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,055.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,056.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,057.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,057.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,058.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,059.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,059.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,060.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,061.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,061.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,062.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,062.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,063.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.10000000000002274F in 10 minutes.
+2024-06-09 17:30:14,065.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,065.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,066.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,067.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,067.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,068.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,068.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,069.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,070.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,071.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,072.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,072.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,073.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,074.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,074.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,075.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,076.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,076.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,077.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,078.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,078.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,079.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,080.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,080.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,081.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,082.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,082.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,083.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,084.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,085.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,086.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,086.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,087.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,087.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,088.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,089.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,090.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,090.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,091.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,092.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,093.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,094.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,094.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,095.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,096.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,096.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,097.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,097.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,098.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,099.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,100.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,100.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,101.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,101.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,102.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,103.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,103.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,104.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,105.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,106.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,107.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,107.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,108.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,109.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,109.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,110.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,111.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,111.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,112.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,113.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,113.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,114.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,115.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,115.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,116.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,117.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,117.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,118.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,118.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,119.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,120.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,121.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,121.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,122.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,123.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,123.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,124.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,124.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,125.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,126.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,127.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,127.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,128.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,128.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,129.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,130.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,131.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,131.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,132.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,133.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,133.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,134.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,135.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,135.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,136.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,136.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,137.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.20000000000001705F in 10 minutes.
+2024-06-09 17:30:14,137.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,138.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,139.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,140.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,141.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,141.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,142.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,142.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,143.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,144.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,144.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,145.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,146.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,147.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,147.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,148.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,149.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,150.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,150.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,151.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,152.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,152.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,153.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,154.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,155.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,155.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,156.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,156.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,157.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,157.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,158.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,159.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,160.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,161.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,161.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,162.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,162.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,163.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,164.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,164.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,165.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,165.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,166.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,167.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,167.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,168.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,169.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,170.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,170.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,170.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 18.0F in 2.5 minutes.
+2024-06-09 17:30:14,171.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,171.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,172.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 18.0F in 2.5 minutes.
+2024-06-09 17:30:14,172.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,173.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,174.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,175.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,176.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,176.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,177.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,177.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,178.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,179.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,179.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,180.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.39999999999997726F in 10 minutes.
+2024-06-09 17:30:14,181.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,182.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.29999999999998295F in 10 minutes.
+2024-06-09 17:30:14,183.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,183.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,199.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,201.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.6999999999999886F in 10 minutes.
+2024-06-09 17:30:14,202.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,203.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,204.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,207.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8999999999999773F in 10 minutes.
+2024-06-09 17:30:14,208.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:14,209.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,210.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.30000000000001137F in 10 minutes.
+2024-06-09 17:30:14,211.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.09999999999999432F in 10 minutes.
+2024-06-09 17:30:14,212.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.0F in 10 minutes.
+2024-06-09 17:30:14,213.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.19999999999998863F in 10 minutes.
+2024-06-09 17:30:14,214.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.4000000000000057F in 10 minutes.
+2024-06-09 17:30:14,216.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,217.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.5F in 10 minutes.
+2024-06-09 17:30:14,218.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:14,219.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.799999999999983F in 10 minutes.
+2024-06-09 17:30:14,282.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 31.700000000000017F in 2.5 minutes.
+2024-06-09 17:30:14,283.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 31.700000000000017F in 2.5 minutes.
+2024-06-09 17:30:14,284.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 54.599999999999994F in 2.5 minutes.
+2024-06-09 17:30:14,285.hm_consumer.INFO  [!] Smoker Alert! Temp dropped by 54.599999999999994F in 2.5 minutes.
+2024-06-09 17:30:14,301.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,307.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,311.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,313.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,315.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,335.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,337.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,343.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,351.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,352.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,354.hm_consumer.INFO  [!] Food Stall Alert! jackfruit temp changed by 0.8000000000000114F in 10 minutes.
+2024-06-09 17:30:14,382.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,383.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,384.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,385.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,385.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,387.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,390.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,395.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,397.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.8999999999999773F in 10 minutes.
+2024-06-09 17:30:14,399.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,400.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,401.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,403.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,405.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 1.0F in 10 minutes.
+2024-06-09 17:30:14,407.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,408.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
+2024-06-09 17:30:14,409.hm_consumer.INFO Food Stall Alert! pineapple temperature changed by 0.9000000000000057F in 10 minutes.
