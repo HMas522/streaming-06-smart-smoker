@@ -33,7 +33,7 @@ def connect_rabbitmq():
     """Connect to RabbitMQ server and return the connection and channel"""
     try:
         # Create a blocking connection to the RabbitMQ server
-        conn = pika.BlockingConnection(pika.ConnectionParameters("localhost"))
+        conn = pika.BlockingConnection(pika.ConnectionParameters(host))
         # Use the connection to create a communication channel
         ch = conn.channel()
 
@@ -50,6 +50,27 @@ def connect_rabbitmq():
         logger.error(f"Error: Connection to RabbitMQ server failed: {e}")
         sys.exit(1)
 
+def send_message(host: str, queue_name: str, message: str):
+    """
+    Creates and sends a message to the queue each execution.
+    This process runs and finishes.
+
+    Parameters:
+        host (str): the host name or IP address of the RabbitMQ server
+        queue_name (str): the name of the queue
+        message (str): the message to be sent to the queue
+    """
+    try:
+        conn = pika.BlockingConnection(pika.ConnectionParameters(host))
+        ch = conn.channel()
+        ch.queue_declare(queue=queue_name, durable=True)
+        ch.basic_publish(exchange="", routing_key=queue_name, body=message)
+        print(f"{message}")
+    except pika.exceptions.AMQPConnectionError as e:
+        print(f"Error: Connection to RabbitMQ server failed: {e}")
+        sys.exit(1)
+    finally:
+        conn.close()
 
 # Define how the csv will be read by RabbitMQ
 # data_row tells us how the code will read the columns in our csv
@@ -80,7 +101,7 @@ def process_csv():
                 if pineapple_temp_str:
                     pineapple_temp = float(pineapple_temp_str)
                     send_message("pineapple", (time_stamp, pineapple_temp))
-   
+                time.sleep(5)
 
     # Error handling
     except FileNotFoundError:
@@ -93,24 +114,9 @@ def process_csv():
         logger.error(f"An unexpected error occurred: {e}")
         sys.exit(1)
 
-def send_message(queue_name: str, message: tuple):
-    """
-    Publish a message to the specified queue.
-
-    Parameters:
-        queue_name (str): The name of the queue
-        message (tuple): The message to be sent to the queue
-    """
-    try:
-        conn, ch = connect_rabbitmq()
-        ch.basic_publish(exchange="", routing_key=queue_name, body=str(message))
-        logger.info(f"Sent message to {queue_name}: {message}")
-    except Exception as e:
-        logger.error(f"Error sending message to {queue_name}: {e}")
-    finally:
-        # Close the connection to the server
-        conn.close()
-
 if __name__ == "__main__":
     offer_rabbitmq_admin_site()
     process_csv()
+
+    host = 'localhost'
+    

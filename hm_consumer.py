@@ -47,9 +47,9 @@ def main():
             channel.queue_delete(queue=queue)
             channel.queue_declare(queue, durable=True)
         channel.basic_qos(prefetch_count=1)
-        channel.basic_consume("smokerA-queue", on_message_callback=smokerA_callback, auto_ack=True)
-        channel.basic_consume("jackfruit-queue", on_message_callback=jackfruit_callback, auto_ack=True)
-        channel.basic_consume("pineapple-queue", on_message_callback=pineapple_callback, auto_ack=True)
+        channel.basic_consume("smokerA-queue", on_message_callback=smokerA_callback, auto_ack=False)
+        channel.basic_consume("jackfruit-queue", on_message_callback=jackfruit_callback, auto_ack=False)
+        channel.basic_consume("pineapple-queue", on_message_callback=pineapple_callback, auto_ack=False)
         print(" [*] Waiting for messages. To exit press CTRL+C")
         channel.start_consuming()
     except Exception as e:
