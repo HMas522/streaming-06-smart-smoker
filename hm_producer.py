@@ -40,7 +40,7 @@ def connect_rabbitmq():
         # Define queues
         # Define delete queue in channel
         # Define declare in channel
-        queues = ["smoker", "jack_fruit", "pineapple"]
+        queues = ["smoker", "jackfruit", "pineapple"]
         for queue_name in queues:
             ch.queue_delete(queue=queue_name)
             ch.queue_declare(queue=queue_name, durable=True)
@@ -67,16 +67,16 @@ def process_csv():
             for data_row in reader:
                 time_stamp = data_row['Time (UTC)']
                 smokerA_temp_str = data_row['Channel1']
-                jack_fruit_temp_str = data_row['Channel2']
+                jackfruit_temp_str = data_row['Channel2']
                 pineapple_temp_str = data_row['Channel3']
 
                 # Define our message based on type of temp and label our message
                 if smokerA_temp_str:
                     smokerA_temp = float(smokerA_temp_str)
                     send_message("smokerA", (time_stamp, smokerA_temp))
-                if jack_fruit_temp_str:
-                    jack_fruit_temp = float(jack_fruit_temp_str)
-                    send_message("jack_fruit", (time_stamp, jack_fruit_temp))
+                if jackfruit_temp_str:
+                    jackfruit_temp = float(jackfruit_temp_str)
+                    send_message("jackfruit", (time_stamp, jackfruit_temp))
                 if pineapple_temp_str:
                     pineapple_temp = float(pineapple_temp_str)
                     send_message("pineapple", (time_stamp, pineapple_temp))

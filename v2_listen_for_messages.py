@@ -13,99 +13,129 @@ Remember:
 - Use Control + C to close a terminal and end the listening process.
 - Use the up arrow to recall the last command executed in the terminal.
 """
-
-import sys
+# Basic imports to run code
 import pika
-import csv
+import sys
 import time
-import webbrowser
-import logging
 from collections import deque
 import re
 
-from util_logger import setup_logger
-logger, logname = setup_logger(__file__)
+# Define the deques and window
+smokerA_deque = deque(maxlen=5)
+jackfruit_deque = deque(maxlen=20)
+pineapple_deque = deque(maxlen=20)
 
-# Define the deques outside of functions so they can be appended to
-smoker_deque = deque(maxlen=5)
-foodA_deque = deque(maxlen=20)
-foodB_deque = deque(maxlen=20)
+# Help with readability by adding degree sign
+degree_sign = u'\N{DEGREE SIGN}'
 
-def process_message(ch, method, properties, body):
-    """
-    Callback function to process a received message.
-    The signature of this function is defined by the Pika library.
+# Define a callback function to be called when a message is received
+# time sleep using "."
+# Basic ack to delete from the queue once acknowledged
+def smoker_callback(ch, method, properties, body):
+    """ Define behavior on getting a message."""
+    print(f" [x] Received {body.decode()}")
+    time.sleep(body.count(b"."))
+    ch.basic_ack(delivery_tag=method.delivery_tag)
 
-    Parameters:
-    - ch: The channel object from RabbitMQ. It provides methods to interact with the protocol,
-          but we don't need them in this particular callback.
-    - method: Contains details about the delivery method and its properties,
-              such as the delivery tag or the exchange/routing key.
-              We don't use it in this example.
-    - properties: Message properties like content_type or delivery_mode.
-                  Not used here since we're focused on the message body.
-    - body: The body of the message (the actual content).
-    """
-    logger.info(f"Received: {body.decode()}")
+    # If not already, turn the temperatures to a float
+    body_decode = body.decode('utf-8')
+    temps = re.findall(r'SmokerA is (\d+\.\d+)', body_decode)
+    temps_float = float(temps[0])
+    smokerA_deque.append(temps_float)
 
+    # If smoker temp decreases by 15 F or more in 2.5 min (or 5 readings)  --> smoker alert!
+    if len(smokerA_deque) == smokerA_deque.maxlen:
+        if smokerA_deque[0] - temps_float > 15:
+            smoker_change = smokerA_deque[0] - temps_float
+            print(f'''
+**************************ALERT****************************
+SmokerA temperature has decreased by {smoker_change}{degree_sign} in 2.5 minutes!
+
+            ''')
+
+# Define first food callback
+def jackfruit_callback(ch, method, properties, body):
+    """ Define behavior on getting a message."""
+    print(f" [x] Received {body.decode()}")    
+    time.sleep(body.count(b"."))
+    ch.basic_ack(delivery_tag=method.delivery_tag)
+
+    body_decode = body.decode('utf-8')
+    temps = re.findall(r'Jackfruit temp is (\d+\.\d+)', body_decode)
+    temps_float = float(temps[0])
+    jackfruit_deque.append(temps_float)
+
+    # If food temp change in temp is 1 F or less in 10 min (or 20 readings)  --> food stall alert!
+    if len(jackfruit_deque) == jackfruit_deque.maxlen:
+        if max(jackfruit_deque) - min(jackfruit_deque) < 1:
+            jackfruit_change = max(jackfruit_deque) - min(jackfruit_deque)
+            print(f'''
+**************************ALERT****************************
+Jackfruit temperature has decreased by {jackfruit_change}{degree_sign} in 10 minutes!
+
+            ''')
+
+# Define second food callback
+def pineapple_callback(ch, method, properties, body):
+    """ Define behavior on getting a message."""
+    print(f" [x] Received {body.decode()}")
+    time.sleep(body.count(b"."))
+    ch.basic_ack(delivery_tag=method.delivery_tag)
+
+    body_decode = body.decode('utf-8')
+    temps = re.findall(r'Pineapple temp is (\d+\.\d+)', body_decode)
+    temps_float = float(temps[0])
+    pineapple_deque.append(temps_float)
+
+    # If food temp change in temp is 1 F or less in 10 min (or 20 readings)  --> food stall alert!
+    if len(pineapple_deque) == pineapple_deque.maxlen:
+        if max(pineapple_deque) - min(pineapple_deque) < 1:
+            pineapple_change = max(pineapple_deque) - min(pineapple_deque)
+            print(f'''
+**************************ALERT****************************
+Pineapple temperature has decreased by {pineapple_change}{degree_sign} in 10 minutes!
+
+            ''')
 
 # define a main function to run the program
-# pass in the hostname as a string parameter if you like
-# if no argument is provided, set a default value to localhost
-def main(hn: str = "localhost"):
-    """Main program entry point."""
-
-    # when a statement can go wrong, use a try-except block
+def main(host: str):
+    """ Continuously listen for task messages on a named queue."""
+    queues = ('smokerA-queue', 'jackfruit-queue', 'pineapple-queue')
     try:
-        # try this code, if it works, keep going
-        # create a blocking connection to the RabbitMQ server
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host=hn))
-
-    # except, if there's an error, do this
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
     except Exception as e:
-        logger.error()
-        logger.error("ERROR: connection to RabbitMQ server failed.")
-        logger.error(f"Verify the server is running on host={hn}.")
-        logger.error(f"The error says: {e}")
-        logger.error()
+        print()
+        print("ERROR: connection to RabbitMQ server failed.")
+        print(f"Verify the server is running on host={host}.")
+        print(f"The error says: {e}")
+        print()
         sys.exit(1)
-
     try:
-        # use the connection to create a communication channel
         channel = connection.channel()
-
-        # use the channel to declare a queue
-        channel.queue_declare(queue="hello")
-
-        # use the channel to consume messages from the queue
-        # on getting a message, execute the login in the callback function
-        channel.basic_consume(
-            queue="hello", on_message_callback=process_message, auto_ack=True
-        )
-
-        # print a message to the console for the user
-        logger.info(" [*] Waiting for messages. To exit press CTRL+C")
-
-        # start consuming messages via the communication channel
+        for queue in queues:
+            channel.queue_delete(queue=queue)
+            channel.queue_declare(queue, durable=True)
+        channel.basic_qos(prefetch_count=1)
+        channel.basic_consume("smokerA-queue", on_message_callback=smoker_callback, auto_ack=False)
+        channel.basic_consume("jackfruit-queue", on_message_callback=jackfruit_callback, auto_ack=False)
+        channel.basic_consume("pineapple-queue", on_message_callback=pineapple_callback, auto_ack=False)
+        print(" Listening Worker Status: Ready for work. To exit press CTRL+C")
         channel.start_consuming()
-
-    # except, in the event of an error OR user stops the process, do this
     except Exception as e:
-        logger.error(
-            "ERROR: An issue occurred while setting up or listening for messages."
-        )
-        logger.error(f"Error Details: {e}")
+        print()
+        print("ERROR: something went wrong.")
+        print(f"The error says: {e}")
         sys.exit(1)
     except KeyboardInterrupt:
-        logger.warning("User interrupted the listening process.")
+        print()
+        print(" User interrupted continuous listening process.")
         sys.exit(0)
     finally:
-        logger.info("Closing connection. Goodbye.")
+        print("\nClosing connection. Goodbye.\n")
         connection.close()
 
-
-# ---------------------------------------------------------------------------
-# If this is the script we are running, then call some functions and execute code!
-# ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    main()
+    # call the main function with the information needed
+
+    host = 'localhost'
+    main(host)
