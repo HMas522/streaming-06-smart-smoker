@@ -14,23 +14,22 @@ Remember:
 - Use the up arrow to recall the last command executed in the terminal.
 """
 
-
-# Import necessary modules from the Python Standard Library
 import sys
-
-# Import the pika library to facilitate communication with RabbitMQ
 import pika
+import csv
+import time
+import webbrowser
+import logging
+from collections import deque
+import re
 
-# Import the custom logger setup utility (local file named util_logger.py)
 from util_logger import setup_logger
-
-# Setup custom logging
 logger, logname = setup_logger(__file__)
 
-# ---------------------------------------------------------------------------
-# Define program functions (bits of reusable code)
-# ---------------------------------------------------------------------------
-
+# Define the deques outside of functions so they can be appended to
+smoker_deque = deque(maxlen=5)
+foodA_deque = deque(maxlen=20)
+foodB_deque = deque(maxlen=20)
 
 def process_message(ch, method, properties, body):
     """
