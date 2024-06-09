@@ -139,11 +139,3 @@ Pineapple temperature has decreased by {pineapple_change}{degree_sign} in 10 min
 
 if __name__ == "__main__":
     # call the main function with the information needed
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("Interrupted")
-        try:
-            sys.exit(0)
-        except SystemExit:
-            os._exit(0)
