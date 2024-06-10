@@ -3,9 +3,9 @@
 # Student: Hayley M
 # Date: 08Jun24
 
-> Use RabbitMQ to distribute tasks to multiple workers
+> Use RabbitMQ to distribute tasks to one consumer
 
-One process will create task messages. Multiple worker processes will share the work. 
+One process will create task messages. One consumer will recieve task messages
 
 
 ## Before You Begin
@@ -188,8 +188,9 @@ Don't worry - it's just code. We can always revert back (try the 'undo' command 
 2. Created callbacks for smoker, food A - jackfruit, food B - pineapple
 3. Created consume function to recieve callback messages and to acknowledge the message
 
+# Producer (getting the temperature readings)
 ![Producer Running](<Images/producer running.png>)
-
+# Temperature monitoring change in temp: Smoker, Jackfruit, Pineapple
 ![Consumer Running](<Images/consumer running.png>)
-
+# Smoker Alert and Food Alert with Time Stamp
 ![Consumer log](<Images/consumer log.png>)
