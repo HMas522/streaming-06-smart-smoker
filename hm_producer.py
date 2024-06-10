@@ -1,6 +1,6 @@
 """
 Student: Hayley M
-Date: 01Jun24
+Date: 08Jun24
 
 Message sender / emitter /producer
 
@@ -61,12 +61,18 @@ def main_work():
                 if smoker_temp_str:
                     smoker_temp = float(smoker_temp_str)
                     send_message(channel, "smokerA", (timestamp, smoker_temp))
+                    logger.info(f" [x] Smoker Temperature is {smoker_temp}")
+
                 if jackfruit_temp_str:
                     jackfruit_temp = float(jackfruit_temp_str)
                     send_message(channel, "jackfruit", (timestamp, jackfruit_temp))
+                    logger.info(f" [x] Food A Temperature is {jackfruit_temp}")
+
                 if pineapple_temp_str:
                     pineapple_temp = float(pineapple_temp_str)
                     send_message(channel, "pineapple", (timestamp, pineapple_temp))
+                    logger.info(f" [x] Food A Temperature is {pineapple_temp}")
+
 
     except FileNotFoundError:
         print("CSV file not found.")
