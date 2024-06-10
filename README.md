@@ -180,71 +180,16 @@ Don't worry - it's just code. We can always revert back (try the 'undo' command 
 
 ## Screenshot - Documentation
 
-![verifying setup](./images/verifying.png)
-
-![verifying 2 setup](./images/verifying2.png)
-
 # Created producer
+1. Reworked producer. Original producer from module 5 did not properly send all 1,000+ messages properly to RabbitMQ
 
-1. created new .py file with student initials
-2. Repurpose code from bonus. This code can read a csv file and send it as a message.
-3. Open and configure conda prompt. 
-4. cd Documents/streaming-05-smart-smoker
-    dir
-    conda activate base
-5. execute hm_producer.py in conda prompt
-6. Verify RabbitMQ 
-7. The logger documents what messages have been received. 
-8. Wait to create consumer to listen for the message. 
+# Created consumer
+1. Used deques to monitor a window of readings
+2. Created callbacks for smoker, food A - jackfruit, food B - pineapple
+3. Created consume function to recieve callback messages and to acknowledge the message
 
-![Module 5 Rabbit MQ](./images/rabbitMQ.png)
+![Producer Running](<Images/producer running.png>)
 
-![Module 5 CSV](./images/food_csv.png)
+![Consumer Running](<Images/consumer running.png>)
 
-![Module 5 log](./images/food_log.png)
-
-## Producer Implementation Questions/Remarks
-1. Will you use a file docstring at the top? Yes, added student name and date - [x]
-2. Where do imports go? right after the file/module docstring - [x]
-3. After imports, declare any constants. 
-4. After constants, define functions. - [x]
-5. Define a function to offer the RabbitMQ admin site, use variables to turn it off temporarily if desired. - [x]
-6. Define a main function to connect, get a communication channel, use the channel to queue_delete() all 3 queues 
-    use the channel to queue_declare() all 3 queues - [x]
-    open the file, get your csv reader, for each row, use the channel to basic_publish() a message - [x]
-7. Use the Python idiom to only call  your functions if this is actually the program being executed (not imported). 
-8. If this is the program that was called: call your offer admin function() - [x]
-    call your main() function, passing in just the host name as an argument (we don't know the queue name or message yet) - [x]
- 
-
-## Handle User Interrupts Gracefully
-1. Will this process be running for a while (half sec per record)?
-2. If so, modify the code the option for the user to send a Keyboard interrupt (see earlier projects) - [x]
-
-## Guided Producer Design 
-1. If this is the main program being executed (and you're not importing it for its functions),
-2. We should call a function to ask the user if they want to see the RabbitMQ admin webpage. - [x]
-3. We should call a function to begin the main work of the program.
-4. As part of the main work, we should
-    1. Get a connection to RabbitMQ, and a channel, delete the 3 existing queues (we'll likely run this multiple times), and then declare them anew. 
-    2. Open the csv file for reading (with appropriate line endings in case of Windows) and create a csv reader. - [x]
-    3. For data_row in reader:
-    [0] first column is the timestamp - we'll include this with each of the 3 messages below - [x]
-    [1] Channel1 = Smoker Temp --> send to message queue "01-smoker" - [x]
-    [2] Channe2 = Food A Temp --> send to message queue "02-food-A" - [x]
-    [3] Channe3 = Food B Temp --> send to message queue "03-food-B" - [x]
-    Send a tuple of (timestamp, smoker temp) to the first queue - [x]
-    Send a tuple of (timestamp, food A temp) to the second queue - [x]
-    Send a tuple of (timestamp, food B temp) to the third queue - [x]
-    Create a binary message from our tuples before using the channel to publish each of the 3 messages.
-    Messages are strings, so use float() to get a numeric value where needed
-    Remember to use with to read the file, or close it when done.  [x]
- 
-
-## Producer Design Questions
-1. Can the open() function fail? - Yes, but one might not know, with out error handling
-2. What do we do if we know a statement can fail? Hint: try/except/finally - Used 3 except statements
-3. Does our data have header row? - Yes, it is our time (UTC), Channel1, Channel2, Channel3
-4. What happens if we try to call float("Channel1")? - Channel1 is a float, from defintion: class float - convert a string or number to a floating point number, if possible
-5. How will you handle the header row in your project? - Used for data_row in reader, then tied the header and our queues/channels together. 
-6. Will you delete it (easy), or use code to skip it (better/more difficult) - Did not delete. 
+![Consumer log](<Images/consumer log.png>)
